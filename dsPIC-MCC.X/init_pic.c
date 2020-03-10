@@ -1,10 +1,3 @@
-/*
-Révision:     	$Rev: $
-Auteur:       	$Author: $
-Date révision: 	$Date:  $
-projet:      	$URL: $
-*/
-
 #include "header.h"
 
 
