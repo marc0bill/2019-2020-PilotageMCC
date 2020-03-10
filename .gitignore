@@ -1,0 +1,14 @@
+
+*.o
+*.d
+*.xml
+dsPIC-MCC.X/dist/default/production/dsPIC-MCC.X.production.elf
+dsPIC-MCC.X/dist/default/production/dsPIC-MCC.X.production.hex
+dsPIC-MCC.X/dist/default/production/dsPIC-MCC.X.production.map
+dsPIC-MCC.X/nbproject/Makefile-default.mk
+dsPIC-MCC.X/nbproject/Makefile-genesis.properties
+dsPIC-MCC.X/nbproject/Makefile-impl.mk
+dsPIC-MCC.X/nbproject/Makefile-local-default.mk
+dsPIC-MCC.X/nbproject/Makefile-variables.mk
+dsPIC-MCC.X/nbproject/Package-default.bash
+dsPIC-MCC.X/Makefile
