@@ -7,7 +7,16 @@ char U1Tx_string[25] = "ProjetUart1\n";
 
 void initUART1(unsigned long baudrate) {
     U1BRG = FCY/(16 * baudrate)-1;
-	U1MODEbits.UARTEN=1;
+    
+	U1MODEbits.UARTEN=1; // Active l'UART 1
+    U1STAbits.UTXEN=1;
+    
+    // Transmission
+    U1MODEbits.PDSEL=0x; // Nb de bits + Parité
+    U1MODEbits.STSEL=0; //Nb de stop
+    
+    
+    
 }
 
 
