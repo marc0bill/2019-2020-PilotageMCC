@@ -6,19 +6,20 @@ char U1Tx_string[25] = "ProjetUart1\n";
 
 
 void initUART1(unsigned long baudrate) {
-    U1BRG = FCY/(16 * baudrate)-1;
+    U1BRG = FCY/(baudrate<<2)-1;
     
-	U1MODEbits.UARTEN=1; //Active l'UART 1
+	U1MODEbits.UARTEN=1; //Enable UART 1
+    U1MODEbits.BRGH=1;
     
-    // Réception
-    U1MODEbits.PDSEL=0x00; //Nb de bits + Parité
-    U1MODEbits.STSEL=0; //Nb de stop
-    U1STAbits.UTXEN=1; //Active transmission
+    // Transmission
+    U1MODEbits.PDSEL=0x00; //8bits, no parity
+    U1STAbits.UTXEN=1; //Enable transmission
     
-    // Réception
-    //U1STAbits.URXDA; // Lire ?
+    // Interruption
+    IEC0bits.U1TXIE=1;
+    IPC3bits.U1TXIP
     
-    
+    'A';
     
 }
 
