@@ -5,8 +5,9 @@
 char U1Tx_string[25] = "ProjetUart1\n";
 
 
-void initUART(unsigned long baudrate) {
-	// todo
+void initUART1(unsigned long baudrate) {
+    U1BRG = FCY/(16 * baudrate)-1;
+	U1MODEbits.UARTEN=1;
 }
 
 

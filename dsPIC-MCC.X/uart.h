@@ -2,6 +2,6 @@
 #define _UART_H_
 
 
-extern void initUART(unsigned long);
+extern void initUART1(unsigned long);
 
 #endif

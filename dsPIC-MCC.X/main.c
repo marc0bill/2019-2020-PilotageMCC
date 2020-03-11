@@ -41,7 +41,7 @@ int main(void) {
     init_PWM1();      // PWM1
     init_QEI();       // Capteurs incrementals
     init_timer1();	 // Timer 1
-    initUART(9600); 
+    initUART1(230400); 
     tempsjeux=0;
     while(1){
 
